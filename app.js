@@ -1,7 +1,6 @@
 const body = document.body
 const refresh= document.getElementById('refresh')
 const submit= document.getElementById('submit')
-const input = document.getElementById('tobeentered').value
 
 const container= document.getElementById('container')
 const char = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -28,6 +27,7 @@ body.onload = function generateCaptcha(){
 
 submit.onclick= function CheckInfo(){
 
+    const input = document.getElementById('tobeentered').value
     
     if (input === "") {
         heading.innerText="Please Enter The Captcha First"
@@ -61,6 +61,7 @@ refresh.onclick= function refreshCaptcha(){
     captcha=Newcaptcha
 
     document.getElementById('_show').value=captcha
+
 }
 
 
