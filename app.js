@@ -61,9 +61,6 @@ refresh.onclick= function refreshCaptcha(){
     captcha=Newcaptcha
 
     document.getElementById('_show').value=captcha
-
-    input.value = "";
-
 }
 
 
